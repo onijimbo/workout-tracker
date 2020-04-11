@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.route('/api/workouts')
     .get(function(req, res){
-        console.log()
+        
         db.Workout.find({})
         .then(dbWorkout => {
             console.log(dbWorkout)
